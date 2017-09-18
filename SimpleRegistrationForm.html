@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+	<form>
+		<h1>Register</h1>
+		
+		<!-- First Name Label and TextField -->
+		<label for = "fName">First Name:</label>
+		<input name = "firstName" id = "fname" type = "text" placeholder = "John" required>
+		
+		<!-- Last Name Label and TextField -->
+		<label for = "lName">Last Name:</label>
+		<input name = "lastName" id = "lName" type = "text" placeholder = "Smith" required>
+		
+		<!-- Gender Radio Buttons and Labels -->
+		<div>
+			<!-- Male -->
+			<label for = "male">Male</label>
+			<input name = "gender" id = "male" type = "radio" value = "male">
+			<!-- Female -->
+			<label for = "female">Female</label>
+			<input name = "gender" id = "female" type = "radio" value = "female">
+			<!-- Other -->
+			<label for = "other">Other</label>
+			<input name = "gender" id = "other" type = "radio" value="other">
+		</div>
+		
+		<!-- Email and Password Label and TextField -->
+		<div>
+			<label for = "email">Email:</label>
+			<input name = "email" id = "email" type = "email" placeholder = "your email" required>
+		
+			<label for = "password">Password:</label>
+			<input name = "password" id = "password" type = "password" required
+				pattern = ".{5,10}" title = "5 to 10 characters">
+		</div>
+		
+		<!-- Birthday Drop downs and Label -->
+		<div>
+			<label for = "birthday">Birthday:</label>
+			<select name = "month">
+				<option>Month</option>
+				<option>Jan</option>
+				<option>Feb</option>
+				<option>Mar</option>
+			</select>
+			<select name = "day">
+				<option>Day</option>
+				<option>10</option>
+				<option>11</option>
+				<option>12</option>
+			</select>
+			<select name = "year">
+				<option>Year</option>
+				<option>1999</option>
+				<option>2000</option>
+				<option>2001</option>
+			</select>
+		</div>
+		
+		<!-- Terms and Conditions Label and checkbox -->
+		<div>
+			<label for = "termsAndConditions">I agree to the terms and conditions:</label>
+			<input name = "termsAndConditions" id = "termsAndConditions" type = "checkbox" value = "agreed">
+		</div>
+		<input type = "submit">
+	</form>
+</body>
+</html>
